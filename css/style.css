@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	/* box-sizing: border-box; */
+}
+
+html,
+body {
+	--dark-color: #2a2b2c;
+	--light-color: #fff;
+	--primary-color: #1abc9c;
+
+	--text-color-dark: var(--dark-color);
+	--text-color-light: var(--light-color);
+	--text-color-primary: var(--primary-color);
+
+	--bg-primary-color: var(--light-color);
+	--bg-secoundary-color: var(--dark-color);
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.7rem;
+	background-color: var(--bg-primary-color);
+	color: var(--text-color-dark);
+}
+
+.container {
+	margin: auto;
+	max-width: 1100px;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+.text-primary {
+	color: var(--primary-color);
+}
+
+a {
+	color: var(--primary-color);
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0.5em 0;
+}
+
+ul {
+	list-style: none;
+}
+
+header {
+	width: 100%;
+	background-color: var(--bg-secoundary-color);
+	color: var(--text-color-light);
+}
+
+
+#showcase {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 50vh;
+}
+
+#showcase::before {
+	content: '';
+
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	opacity: 0.3;
+	background: url('../img/hero-image-1.jpg') no-repeat top center/cover;
+}
+
+#showcase .showcase-content {
+	position: relative;
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--text-color-light);
+}
+
+#showcase .showcase-content > h1 {
+	font-size: 6rem;
+	line-height: 1em;
+	text-shadow: 10px 10px 8px var(--dark-color);
+}
+
+#showcase .showcase-content > p {
+	font-size: 2rem;
+	line-height: 1em;
+	margin: 0.5em 0;
+	text-shadow: 5px 5px 4px var(--dark-color);
+}
+
+#navbar {
+	background-color: var(--bg-secoundary-color);
+	color: var(--text-color-light);
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+#navbar a {
+	color: var(--text-color-light);
+}
+
+#navbar .navbar-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#navbar .navbar-content > ul {
+	display: flex;
+}
+
+#navbar .navbar-content > ul a {
+	color: var(--text-color-light);
+	padding: 10px 20px;
+	margin: 0 5px;
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+
+#navbar .navbar-content > ul a:hover {
+	border-bottom: var(--primary-color) 2px solid;
+}
+
+main h2 {
+	font-size: 2rem;
+	margin: 1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+main section {
+	padding: 20px 0;
+}
